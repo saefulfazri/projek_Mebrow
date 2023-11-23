@@ -3,3 +3,14 @@
 * {
     font-family: 'Noto Sans', sans-serif;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #003554;
+    color: #fff;
+}
+.clr-navbar {
+    background-color: #032030;
+}
