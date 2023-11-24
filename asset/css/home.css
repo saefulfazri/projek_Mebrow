@@ -14,3 +14,10 @@ body {
 .clr-navbar {
     background-color: #032030;
 }
+.row-bg {
+    background-color: #002a42;
+    color: #fff;
+}
+.clr-section {
+    background-color: #003e5e;
+}
