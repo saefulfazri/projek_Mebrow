@@ -9,6 +9,9 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <!-- Manual CSS -->
     <link rel="stylesheet" href="asset/css/home.css">
+    <!-- animasi -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- icons -->
     <link rel="shortcut icon" type="image/x-icon" href="asset/img/icons/11zon_cropped.png" />
     <title>Home</title>
@@ -24,14 +27,16 @@
         <div class="py-5">
             <h1 class="display-5 fw-bold text-white">WELCOME!!</h1>
             <div class="col mx-auto">
-                <p class="fs-5  text-white">Sambutan yang sangat hangat untuk Anda! Sangat menyenangkan memilik anda berkunjung di website kami!</p>
+                <p class="fs-5  text-white">Sambutan yang sangat hangat untuk Anda! Sangat menyenangkan memilik anda
+                    berkunjung di website kami!</p>
             </div>
         </div>
     </div>
     <section class="my-5">
         <div class="container ">
             <!-- fazri -->
-            <div class="row row-bg mb-5 d-flex justify-content-center shadow p-5 rounded">
+            <div data-aos="fade-left" data-aos-duration="3000"
+                class="row row-bg mb-5 d-flex justify-content-center shadow p-5 rounded">
                 <h1 class="fw-bolder text-end">Fazri</h1>
                 <div class="col-sm-6 col-md-10 d-grid align-items-center">
                     <p>Fazri, dengan semangat yang menggebu, memasuki dunia IT sebagai pemula. Dengan ketekunan dan rasa
@@ -48,7 +53,7 @@
                 </div>
             </div>
             <!-- isal -->
-            <div class="row row-bg mb-5 d-flex justify-content-center shadow p-5 rounded">
+            <div data-aos="fade-right" data-aos-duration="3000" class="row row-bg mb-5 d-flex justify-content-center shadow p-5 rounded">
                 <h1 class=" fw-bolder">Isal</h1>
                 <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
                     <img src="asset/img/icons/11zon_cropped.png" alt="" style="width: 200px;">
@@ -65,7 +70,7 @@
                 </div>
             </div>
             <!-- ditar -->
-            <div class="row row-bg mb-5 d-flex justify-content-center shadow p-5 rounded">
+            <div data-aos="fade-left" data-aos-duration="3000" class="row row-bg mb-5 d-flex justify-content-center shadow p-5 rounded">
                 <h1 class="fw-bolder text-end">Dita</h1>
                 <div class="col-sm-6 col-md-10 d-grid align-items-center">
                     <p>Dita, seorang pencinta teknologi, memulai perjalanan belajarnya di dunia IT dengan penuh
@@ -82,7 +87,7 @@
                 </div>
             </div>
             <!-- santi -->
-            <div class="row row-bg mb-5 d-flex justify-content-center shadow p-5 rounded">
+            <div data-aos="fade-right" data-aos-duration="3000" class="row row-bg mb-5 d-flex justify-content-center shadow p-5 rounded">
                 <h1 class=" fw-bolder">Santi</h1>
                 <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
                     <img src="asset/img/icons/11zon_cropped.png" alt="" style="width: 200px;">
@@ -101,9 +106,12 @@
             </div>
         </div>
     </section>
-    <section class="my-5">
+    <section data-aos="fade-down"
+    data-aos-anchor-placement="top-center"
+    data-aos-duration="2000"
+     class="my-5">
         <div class="container">
-            <div class="row row-bg p-5 shadow">
+            <div  class="row row-bg p-5 shadow ">
                 <h1 class="fw-bold">Add your comment</h1>
                 <div class="col">
                     <label class="my-2" for="username">Username</label>
@@ -111,6 +119,15 @@
                     <label class="my-2" for="comment">Comments</label>
                     <textarea class="form-control" id="comment" style="height: 100px"></textarea>
                     <input class="btn btn-primary border-none my-3" type="button" value="submit">
+                </div>
+            </div>
+            <div class="row my-5 row-bg p-4 rounded shadow">
+                <div class="d-flex col">
+                    <img class="me-3" src="asset/img/icons/user.png" style="width: 50px; height: 50px;" alt="">
+                    <div class="d-grid">
+                        <p class="fw-bold mb-0">Username</p>
+                        <p class="mb-0">i like website this good wel wel browwww</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -121,3 +138,6 @@
 </body>
 
 </html>
+<script>
+    AOS.init();
+  </script>
